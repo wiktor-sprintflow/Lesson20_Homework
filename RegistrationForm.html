@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div class="margins">
+    <h4>Rejestracja</h4>
+    <form method="post">
+        <div class="form-group">
+            <label for="firstName">Imię</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Wpisz imię">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Nazwisko</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Wpisz nazwisko">
+        </div>
+
+        <div class="form-row" style="width: 30%">
+            <div class="col">
+                <label>Płeć</label>
+            </div>
+            <div class="col">
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="female" name="genderGroup" checked>
+                    <label class="custom-control-label" for="female">Kobieta</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="male" name="genderGroup">
+                    <label class="custom-control-label" for="male">Mężczyzna</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Adres email</label>
+            <input type="email" class="form-control" id="email" placeholder="Wpisz adres email">
+        </div>
+        <div class="form-group">
+            <label for="password">Hasło</label>
+            <input type="password" class="form-control" id="password" placeholder="Hasło">
+            <small id="passwordHelp" class="form-text text-muted">Min. 8 znaków</small>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Miasto</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Województwo</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Wybierz...</option>
+                    <option>woj. dolnośląskie</option>
+                    <option>woj. kujawsko-pomorskie</option>
+                    <option>woj. lubelskie</option>
+                    <option>woj. lubuskie</option>
+                    <option>woj. łódzkie</option>
+                    <option>woj. małopolskie</option>
+                    <option>woj. mazowieckie</option>
+                    <option>woj. opolskie</option>
+                    <option>woj. podkarpackie</option>
+                    <option>woj. podlaskie</option>
+                    <option>woj. pomorskie</option>
+                    <option>woj. śląskie</option>
+                    <option>woj. świętokrzyskie</option>
+                    <option>woj. warmińsko-mazurskie</option>
+                    <option>woj. wielkopolskie</option>
+                    <option>woj. zachodniopomorskie</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Kod pocztowy</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="rules2">
+            <label class="custom-control-label" for="rules2">Akceptuję <a href="regulamin.html" target="_blank">regulamin</a></label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="marketing2" value="" checked>
+            <label class="custom-control-label" for="marketing2">Wyrażam zgodę na otrzymywanie informacji
+                marketingowych</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Rejestruj</button>
+
+    </form>
+</div>
+</body>
+</html>
